@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; 
+    position: relative; 
+}
+
+#title {
+    color: blue;
+}
+
+.subtitle {
+    color: blueviolet;
+}
+
+.italics {
+    font-style: italic;
+    font-weight: 10;
+}
+
+.img-space_bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/space_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-planets {
+    width: 100%;
+    height: 400px; 
+    margin-top: 20px;
+    background-image: url(img/planets.jpg);
+    background-size: cover;
+}

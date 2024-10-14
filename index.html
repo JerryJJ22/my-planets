@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="img-space_bg"></div>
+        <div class="content">
+            <h1 id="title"><span class="italics">The Solar System</span></h1>
+
+            <h2 class="subtitle">Planets</h2>
+            <p id="output">Forgetting to click something? :O</p>
+            <button onclick="printMessage()"> !! PLEASE CLICK HERE !! </button>
+            
+            <div class="img-planets"></div>
+            
+            <p>The Sun is a huge, hot ball of gas at the center of our solar system. It gives off light and heat, which are crucial for life on Earth. The Sun's gravity keeps the planets, including Earth, in orbit around it. It’s made mostly of hydrogen and helium, and its energy comes from nuclear reactions happening inside it.</p>
+            <form action="just_for_now.php" method="GET">
+                <label for="pname">Planet Name:</label>
+                <input type="text" id="pname" name="pname" placeholder="Earth">
+                <div>
+                    <label for="planet">Planet</label>
+                    <select id="planet" name="planet">
+                        <option value="Mercury">Mercury</option>
+                        <option value="Venus">Venus</option>
+                        <option value="Earth">Earth</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Saturn">Saturn</option>
+                        <option value="Uranus">Uranus</option>
+                        <option value="Neptune">Neptune</option>
+                    </select>
+                </div>
+            </form>
+            
+            <ol>
+                <li>Mercury
+                    <table>
+                        <tr>
+                            <th>This planet has no moons!</th>
+                        </tr>
+                    </table>
+                </li>
+                <li>Venus
+                    <table>
+                        <tr>
+                            <th>This planet has no moons!</th>
+                        </tr>
+                    </table>
+                </li>
+                <li>Earth
+                    <table>
+                        <tr>
+                            <th>Moon count : 1</th>
+                        </tr>
+                        <tr>
+                            <td>Moon</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Mars
+                    <table>
+                        <tr>
+                            <th>Moon count : 2</th>
+                        </tr>
+                        <tr>
+                            <td>Phobos</td>
+                            <td>Deimos</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Jupiter
+                    <table>
+                        <tr>
+                            <th>Moon count : 95</th>
+                        </tr>
+                        <tr>
+                            <td>Io</td>
+                            <td>Europa</td>
+                            <td>Ganymede</td>
+                            <td>Callisto</td>
+                            <td>And many more...</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Saturn
+                    <table>
+                        <tr>
+                            <th>Moon count : 146</th>
+                        </tr>
+                        <tr>
+                            <td>Titna</td>
+                            <td>Enceladus</td>
+                            <td>Mimas</td>
+                            <td>Dione</td>
+                            <td>And many more...</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Uranus
+                    <table>
+                        <tr>
+                            <th>Moon count : 28</th>
+                        </tr>
+                        <tr>
+                            <td>Titania</td>
+                            <td>Miranda</td>
+                            <td>setebos</td>
+                            <td>Umbriel</td>
+                            <td>And many more...</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Neptune
+                    <table>
+                        <tr>
+                            <th>Moon count : 16</th>
+                        </tr>
+                        <tr>
+                            <td>Triton</td>
+                            <td>Thalassa</td>
+                            <td>Hippocamp</td>
+                            <td>Nereid</td>
+                            <td>And many more...</td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+        </div>
+
+        <script>
+            function printMessage() {
+                let currentDateTime = Date(); 
+                let message = "Thank you for visiting this site! The current date and time is: " + currentDateTime + ". I hope you get to learn something! :)";
+                document.getElementById("output").innerHTML = message;
+            }
+        </script>
+
+        <p>The solar system consists of the Sun, eight planets, their moons, and a variety of smaller objects like asteroids and comets, all bound together by the Sun's gravitational pull. Each planet orbits the Sun at different distances, creating a diverse range of environments, from the scorching heat of Mercury to the icy realms of the outer planets.</p>
+        <p>Learn more about the solar system on <a href="https://en.wikipedia.org/wiki/Solar_system" target="_blank">Wikipedia</a>.</p>
+
+
+    </body>
+</html>
